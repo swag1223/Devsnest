@@ -1,0 +1,82 @@
+body {
+  font-family: "Roboto", sans-serif;
+  color: rgb(72, 117, 133);
+  overflow-wrap: break-word;
+}
+
+fieldset {
+  border: 2px solid rgb(72, 117, 133);
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+legend {
+  text-align: center;
+  font-family: "Crimson Text", serif;
+  font-weight: bold;
+  font-size: 30px;
+  padding: 5px 50px 5px 50px;
+}
+span {
+  font-size: 25px;
+  font-weight: normal;
+}
+.content {
+  margin: 50px 20px 30px 20px;
+}
+
+.col1 {
+  width: 45%;
+  float: left;
+  /* border-right: 2px solid rgb(72, 117, 133);*/
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+.col2 {
+  width: 55%;
+  float: right;
+  border-left: 2px solid rgb(72, 117, 133);
+  margin-top: -3%;
+  padding-left: 20px;
+  box-sizing: border-box;
+}
+
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+
+.group:after {
+  clear: both;
+}
+
+.group {
+  zoom: 1;
+}
+
+.block-heading {
+  font-size: 20px;
+}
+
+.heading {
+  font-size: 25px;
+  font-family: "Crimson Text", serif;
+}
+.block-sub-heading {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+ul {
+  padding: 0px;
+  list-style-position: inside;
+}
+
+li {
+  font-size: 15px;
+}
+.listislist {
+  list-style-type: none;
+}
