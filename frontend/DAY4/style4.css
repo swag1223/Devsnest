@@ -1,0 +1,108 @@
+body {
+  background-color: rgba(255, 171, 115, 0.534);
+}
+.center {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+.clock {
+  height: 350px;
+  width: 350px;
+  border-radius: 50%;
+  background-color: cornsilk;
+  /* border: 30px solid #4a1c40;*/
+  border: 30px solid #8fd6e1;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+}
+
+.inner {
+  height: 340px;
+  width: 340px;
+  border-radius: 50%;
+  /*background-color: thistle;*/
+  box-shadow: inset 0 2px 30px rgba(0, 0, 0, 0.2);
+}
+
+.dot {
+  width: 15px;
+  height: 15px;
+  background-color: #848484;
+  border-radius: 50%;
+  border: 2px solid whitesmoke;
+  z-index: 1000;
+}
+
+.minute {
+  position: absolute;
+  top: 145px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+
+  width: 4px;
+  height: 145px;
+  background-color: black;
+  transform: rotate(10deg);
+  transform-origin: 0 0;
+
+  /*animation: tiktok 120s linear infinite;*/
+}
+
+.hour {
+  position: absolute;
+  top: 0;
+  left: 130px;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+
+  width: 130px;
+  height: 6px;
+  background-color: black;
+  transform: rotate(10deg);
+  transform-origin: 0 0;
+
+  /*animation: tiktok 180s linear infinite;*/
+}
+
+.second {
+  position: absolute;
+  top: 0;
+  left: 155px;
+  right: 0px;
+  bottom: 0;
+  margin: auto;
+
+  width: 155px;
+  height: 2px;
+  background-color: red;
+  /* transform: rotate(-90deg); */
+  transform-origin: 0 0;
+
+  animation: tiktok 60s linear infinite;
+}
+
+@keyframes tiktok {
+  0% {
+    transform: rotate(-90deg);
+  }
+
+  100% {
+    transform: rotate(270deg);
+  }
+}
+
+@-webkit-keyframes tiktok {
+  0% {
+    transform: rotate(-90deg);
+  }
+
+  100% {
+    transform: rotate(270deg);
+  }
+}
