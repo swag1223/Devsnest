@@ -10,25 +10,39 @@ window.onload = () => {
     const divbtn = document.getElementById("divide");
 
     addbtn.addEventListener("click", () => {
-        result.innerHTML = "Result: " + ( Number(num1.value) + Number(num2.value));
+        if (isNaN(num1.value) || isNaN(num2.value)) {
+            result.innerHTML = "Enter a VALID input !! "
+        }
+        else {
+            result.innerHTML = "Result: " + ( Number(num1.value) + Number(num2.value));
+        }
     });
 
     subbtn.addEventListener("click", () => {
-        result.innerHTML = "Result: " + ( Number(num1.value) - Number(num2.value));
+        if (isNaN(num1.value) || isNaN(num2.value)) {
+            result.innerHTML = "Enter a VALID input !! "
+        }
+        else {
+            result.innerHTML = "Result: " + ( Number(num1.value) - Number(num2.value));
+        }
     })
     multbtn.addEventListener("click", () => {
-        result.innerHTML = "Result: " + (Number(num1.value) * Number(num2.value));
+        if (isNaN(num1.value) || isNaN(num2.value)) {
+            result.innerHTML = "Enter a VALID input !! "
+        }
+        else {
+            result.innerHTML = "Result: " + ( Number(num1.value) * Number(num2.value));
+        }
     });
 
     divbtn.addEventListener("click", () => {
-        result.innerHTML = "Result: " + (Number(num1.value) / Number(num2.value));
+        if (isNaN(num1.value) || isNaN(num2.value)) {
+            result.innerHTML = "Enter a VALID input !! "
+        }
+        else {
+            result.innerHTML = "Result: " + ( Number(num1.value) / Number(num2.value));
+        }
     });
-    // subbtn.addEventListener("click", subtraction);
-
-    // function subtraction() {
-    //     var res = Number(num1.value) - Number(num2.value);
-    //     result.innerHTML = "Result: " + res;
-    // }
 
 
 
