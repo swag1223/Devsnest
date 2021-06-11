@@ -1,0 +1,55 @@
+body {
+  background-color: rgb(214, 214, 214);
+}
+body,
+::placeholder {
+  font-family: monospace;
+}
+
+.box {
+  text-align: center;
+}
+input {
+  width: 20%;
+  height: 20px;
+  margin: 10px;
+  border: none;
+  outline: none;
+  padding: 10px;
+  margin: 10px;
+  font-size: 15px;
+
+  background: transparent;
+  box-shadow: inset 2px 2px 5px #babecc, inset -5px -5px 10px #ffffff;
+}
+
+button {
+  margin: 40px 10px 10px 10px;
+  border: none;
+  width: 50px;
+  height: 50px;
+  outline: none;
+  font-size: 25px;
+  font-weight: bold;
+
+  background: rgb(214, 214, 214);
+  /* background: black; */
+  border-radius: 20%;
+  box-shadow: 5px 5px 10px #b6acac, -5px -5px 10px #faf4f4;
+  color: black;
+  /* color: orange; */
+}
+
+button:active {
+  box-shadow: inset 1px 1px 2px #babeec, inset -1px -1px 2px #ffffff;
+}
+
+/* .math {
+  background: black;
+  color: #ffffff;
+} */
+
+#result {
+  font-size: 20px;
+  font-weight: bold;
+}
