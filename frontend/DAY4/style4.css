@@ -84,7 +84,7 @@ body {
   /* transform: rotate(-90deg); */
   transform-origin: 0 0;
 
-  animation: tiktok 60s linear infinite;
+  animation: tiktok 60s steps(60) infinite;
 }
 
 @keyframes tiktok {

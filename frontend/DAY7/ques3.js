@@ -4,7 +4,7 @@
 var student = { name: "David Rayy", sclass: "VI", rollno: 12 };
 
 function lenOfObj(obj) {
-    console.log('length of object is: ' , Object.keys(obj).length);
+    console.log('length of object is ' , Object.keys(obj).length);
     return;
 }
 
