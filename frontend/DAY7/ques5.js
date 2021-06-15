@@ -9,7 +9,7 @@ var cylinder = {
 }
 
 function volOfCyl(obj) {
-    var vol = Math.PI * 2 * obj.radius * obj.height;
+    var vol = Math.PI * obj.radius * obj.radius * obj.height;
     console.log("Volume of Cylinder is: " , vol.toFixed(4) );
     return;
 }
