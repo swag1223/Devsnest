@@ -1,6 +1,5 @@
 function makepixel() {
     var pixel = document.createElement("div");
-    // element.classList.add("newClass");
     pixel.classList.add("red");
     return pixel;
 }
@@ -16,7 +15,6 @@ function doTask(e) {
     var pixelClass = e.target.className;
     console.log(pixelClass);
     if (pixelClass == "red") {
-        // element.classList.remove("mystyle");
         e.target.classList.remove("red");
         e.target.classList.add("white");
         console.log(e.target);
