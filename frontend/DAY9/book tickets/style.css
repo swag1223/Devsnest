@@ -1,0 +1,44 @@
+body {
+  background-color: rgba(251, 217, 255, 0.801);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  font-family: monospace;
+  font-weight: bolder;
+  font-size: 25px;
+}
+.info {
+  display: flex;
+  justify-content: space-evenly;
+  width: 80%;
+}
+
+.container {
+  width: 80%;
+  height: 72vh;
+  display: grid;
+  padding: 6px;
+
+  background-color: rgb(17, 100, 100);
+  grid-template-columns: repeat(6, 1fr);
+  gap: 4px;
+}
+
+.container div {
+  border-collapse: collapse;
+  box-sizing: border-box;
+  border-radius: 2px;
+}
+
+.container div:hover {
+  background-color: rgba(75, 224, 209, 0.76);
+}
+
+div.lightblue {
+  background-color: rgb(158, 245, 245);
+}
+div.darkblue {
+  background-color: teal;
+}

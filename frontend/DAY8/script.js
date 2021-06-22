@@ -20,7 +20,7 @@ for (let i = 0; i < 400; i++){
 
 container.addEventListener('click', doTask);
 function doTask(e) {
-    console.log(e);
+    // console.log(e);
     var pixelClass = e.target.className;
     console.log(pixelClass);
     if (pixelClass == "red") {
