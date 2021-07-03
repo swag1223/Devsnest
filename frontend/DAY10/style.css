@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgba(128, 128, 128, 0.678);
+}
+.container {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 650px;
+  height: 500px;
+  gap: 10px;
+
+  perspective: 1000px;
+}
+.cards {
+  position: relative;
+  /* background-color: crimson; */
+  border-radius: 10px;
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease;
+}
+.front,
+.back {
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.front,
+.back,
+.front img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.back img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+/* add flip class using js */
+.cards.flip {
+  transform: rotateY(180deg);
+}
+
+.front {
+  transform: rotateY(180deg);
+}
