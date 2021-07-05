@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TO-Do-List</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://kit-pro.fontawesome.com/releases/v5.15.3/css/pro.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main-container">
+      <h1>To-Do-List</h1>
+      <div class="container">
+        <input id="inputField" type="text" /><button id="addToDo">
+          <i class="far fa-plus-circle" style="font-size: 20px"></i>
+        </button>
+        <div class="to-dos" id="toDoContainer"></div>
+      </div>
+    </div>
+    <footer>
+      <div class="instructions">
+        <p>Note :-</p>
+        <ul>
+          <li>Single Click - To mark the task as done</li>
+          <li>Double Click - To delete the task</li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
