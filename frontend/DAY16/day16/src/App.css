@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.app {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.first {
+  height: 640px;
+  background-color: #a9db97;
+  margin-bottom: 100px;
+  display: flex;
+}
+
+.second {
+  margin-bottom: 100px;
+  display: flex;
+}

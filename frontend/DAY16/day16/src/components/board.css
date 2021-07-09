@@ -1,0 +1,22 @@
+.chessboard {
+  margin: auto;
+  border: 15px solid black;
+  width: 450px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+}
+.row {
+  display: flex;
+  flex: 1;
+}
+.block {
+  flex: 1;
+}
+
+.row:nth-child(odd) .block:nth-child(odd) {
+  background-color: black;
+}
+.row:nth-child(even) .block:nth-child(even) {
+  background-color: black;
+}

@@ -11,13 +11,14 @@ function makeBlock() {
     return block;
 }
 
-for (let i = 0; i < 36; i++){
+for (let i = 0; i < 36; i++) {
     getContainer.appendChild(makeBlock());
 }
 
 getContainer.addEventListener('click', doTask);
 
 function doTask(e) {
+    if (e.target === getContainer) return;
     var blockClass = e.target.className;
 
     if (blockClass === 'lightblue') {
