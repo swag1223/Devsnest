@@ -20,14 +20,28 @@ function Card() {
     { item: "French Fries", calorie: 176 },
     ];
    
-    
+    function getColor(val) {
+        if (val > 200) {
+            return 'red'
+        }
+        else if (val > 100) {
+            return 'orange'
+        }
+        else if (val > 50) {
+            return 'green'
+        }
+        else {
+            return "grey"
+        }
+
+    }
     
   return (
     <div className="container">
       <h1>Calorie Read Only</h1>
       <div className="card">
         {caloriecard.map((value, indx) => (
-            <Caloriecard key={indx} item={value.item} calorie={value.calorie} style={{ backgroundColor: value.calorie > '100' ? 'orange' : 'grey'}}/>
+            <Caloriecard key={indx} item={value.item} calorie={value.calorie} style={{ backgroundColor: getColor(value.calorie)}}/>
         ))}
       </div>
     </div>
