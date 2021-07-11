@@ -1,0 +1,15 @@
+.chessboard {
+  margin: auto;
+  border: 15px solid black;
+  width: 450px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+}
+.row {
+  display: flex;
+  flex: 1;
+}
+.block {
+  flex: 1;
+}
