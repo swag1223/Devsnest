@@ -1,0 +1,23 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,400italic,700|Sansita+One);
+body {
+  background: #252627;
+  transition: background 300ms ease;
+  color: wheat;
+  font-family: "Sansita One", serif;
+  font-size: 2rem;
+}
+.btn {
+  padding: 12px 36px;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #0162c8, #55e7fc);
+  outline: none;
+  border: none;
+  margin: 50px;
+  cursor: pointer;
+}
+.dark-theme {
+  background: #edf7f6;
+  color: #292922;
+}
