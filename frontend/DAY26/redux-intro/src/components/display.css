@@ -1,0 +1,17 @@
+.data {
+  font-weight: bold;
+  min-width: 250px;
+  margin: 0 35px 20px;
+  min-height: 250px;
+  padding: 6px 15px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  background: #ee9ba3;
+  color: white;
+  font-size: 18px;
+}
+
+.data h1 {
+  color: black;
+}

@@ -1,0 +1,26 @@
+.inputs {
+  background-color: white;
+  width: 300px;
+  height: 300px;
+  border-radius: 15px;
+  left: 370px;
+}
+
+h1 {
+  color: #748194;
+  margin: 40px 10px;
+}
+
+input {
+  font-weight: bold;
+  width: 200px;
+  margin: 0 35px 20px;
+  height: 35px;
+  padding: 6px 15px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  background: #e1e2e4c7;
+  color: #5e6879;
+  font-size: 14px;
+}
