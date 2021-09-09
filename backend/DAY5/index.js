@@ -29,16 +29,24 @@ const getTask = () => {
     console.log(data);
 }
 
-
-
 const clearFile = () => {
     fs.unlinkSync("./tha.txt");
 }
 
 const wrongCmd = () => {
-  console.log("Please enter valid command.");
+    console.log("Please enter valid command. help");
 
 }
+
+const help = () => {
+  console.log(`
+1. create-folder <foldername>
+2. delete-folder <foldername>
+3. create-file <datatobeadded>
+4. add <datatobeadded>
+5. get
+6. clear-file`);
+};
 
 const App = () => {
     if (cmd === "create-folder") createFolder(task);
@@ -47,6 +55,7 @@ const App = () => {
     else if (cmd === "add") addTask(task);
     else if (cmd === "get") getTask();
     else if (cmd === "clear-file") clearFile();
+    else if (cmd === "help") help();
     else wrongCmd();
 }
 
